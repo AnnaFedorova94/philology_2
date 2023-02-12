@@ -1,0 +1,25 @@
+
+.block-history__title{
+   text-align: center;
+}
+.block-history {
+   padding: 60px 0;
+}
+.block-history__container {
+}
+.block-history__img{
+   margin-bottom: 40px;
+}
+.block-history__img img{
+   max-width: 100%;
+}
+.block-history__text {
+   line-height: 1.3;
+   font-size: 18px;
+}
+.block-history__text p{
+   margin-bottom: 10px;
+}
+.block-history__text span{
+   padding-left: 30px;
+}
