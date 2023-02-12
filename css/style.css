@@ -106,25 +106,25 @@ padding-left: 5px;
 .header__nav {
 	font-weight: 500;
 }
-.menu li{
+.menu > li{
 	position: relative;
 }
-.menu__list {
+.menu__list > ul{
 	display: flex;
 	justify-content: space-between;
 }
-.menu__link {
+.menu > li{
 	color: white;
 	text-transform: uppercase;
 }
-.menu__link:hover{
+.menu> li:hover{
 	color: #fdbd67;
 }
-.menu__list>li:hover .sub-menu__list{
+.menu-item >li:hover .sub-menu{
 	display: block;
 	color: #fdbd67;
 }
-.sub-menu {
+.sub-menu{
 	background-color: #ebecf0;
 	padding: 15px;
 	min-width: 200px;
@@ -143,15 +143,28 @@ padding-left: 5px;
 .sub-menu li:not(:last-child){
 	margin-bottom: 10px;
 }
-.menu__list>li:hover .sub-menu {
+.menu>li:hover .sub-menu {
 	visibility: visible;
 	opacity: 1;
+	font-size: 18px;
+	font-weight: 500;
+	text-transform: none;
 }
-.sub-menu__link:not(:last-child) {
+.sub-menu:not(:last-child) {
 margin-bottom: 15px;
 }
- .sub-menu__link:hover {
+ .sub-menu li:hover {
 	color:  #b98643
+}
+.sub-sub-menu{
+	position: absolute;
+	top: 155px;
+	left: 100%;
+}
+.sub-sub-menu--2{
+	position: absolute;
+	top: 300px;
+	left: 100%;
 }
 /* ================================================ */
 
