@@ -8,11 +8,12 @@ menuBtn.addEventListener('click', function () {
 	menu.classList.toggle('active');
 });
 
-let parent_menu_item = menu.querySelector( ".menu-item-has-children" )
+let parent_menu_items = menu.querySelectorAll( ".menu-item-has-children" )
 
-parent_menu_item.addEventListener( 'click', e => {
-	e.target.classList.toggle( "active" );
-})
+parent_menu_items.forEach(item => {
+	item.addEventListener('click', event => event.target.classList.toggle( "active" ) )
+});
+
 
 //search form clickable btn
 let search_form = document.getElementById("search_form");
